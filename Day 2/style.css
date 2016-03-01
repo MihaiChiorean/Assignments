@@ -1,0 +1,116 @@
+* {
+  margin:0 auto;
+  padding: 0 auto;
+}
+
+body {
+  width: 1200px;
+}
+
+container {
+  margin:0 auto;
+  width: 1200px;
+}
+/*<<<<<<<<<<<header>>>>>>>>>>>>>>>>*/
+header {
+  background-image: url(http://img.alibaba.com/kf/HTB1O9mFJpXXXXalXFXXq6xXFXXXG.jpg);
+  height: 190px;
+  background-repeat: no-repeat;
+  margin:0 auto;
+}
+.nav_bar {
+  height: 40px;
+  background-color: #d7e6fa;
+  margin-top: 110px;
+}
+
+.nav_bar ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.nav_bar li {
+  float: left;
+}
+.nav_bar li a{
+  display: inline-block;
+  padding: 8px;
+  color: #09c
+}
+
+a:link    {
+  background-color:transparent;
+  text-decoration:none
+}
+
+.tabelsus {
+  color:white;
+  float: right;
+}
+
+/*<<<<<<<<<<<     content     >>>>>>>>>>>>>>>>*/
+
+.row1:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 50px;
+}
+.row2:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 0;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-5 p {
+  padding-top: 50px;
+  font-size: 50px;
+  margin:0 auto;
+}
+
+.row1 .col-3 p:first-child {
+  padding-top: 30px;
+  font-size: 30px;
+  margin:0 auto;
+}
+
+.row1 .col-1 {
+padding-top: 50px;
+
+}
+/*<<<<<<<<<<<     footer     >>>>>>>>>>>>>>>>*/
+
+footer {
+  clear:both;
+  bottom: 0;
+  text-align: center;
+  position: fixed;
+  display: inline;
+}
+footer ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0 auto;
+
+}
+
+a {
+  padding: 10px;
+}

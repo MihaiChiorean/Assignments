@@ -1,0 +1,29 @@
+header {
+    color:black;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 24px;
+}
+div {
+    display: inline;
+}
+img {
+    float:left;
+}
+p{
+    margin-left: 20px;
+    float: left;
+    width:80%;
+}
+a {
+    color:green;
+}
+a:hover {
+    color:red;
+}
+footer {
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}

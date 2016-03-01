@@ -1,0 +1,238 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+
+	vertical-align: baseline;
+
+	border: 0;
+
+	font: inherit;
+	font-size: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section
+{
+	display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  max-height: 100%;
+}
+page[size="A4"] {
+  font-family: 'Work Sans', sans-serif;
+  background: white;
+  width: 21cm;
+  height: 29.7cm;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+
+.row {
+  min-height: 150px;
+  height: auto;
+  background-color:white;
+	overflow: hidden;
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>----definirea coloanelor din row-----<<<<<<<<<<<<<<<<<<<<<<<<*/
+[class^="col-"],
+[class*=" col-"] {
+
+}
+
+[class^="col-"],
+[class*=" col-"] {
+  float: left;
+  background-color: white;
+}
+
+.col-100 {
+  width: 100%;
+}
+
+.col-50 {
+  width: 50%;
+  height: 100%;
+  min-height: 150px;
+}
+
+.col-25 {
+  width: 25%;
+}
+
+.col-33 {
+  width: 33.3333%;
+}
+
+.col-66 {
+  width: 66.6666%;
+}
+
+.col-75 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 10%;
+}
+
+.col-20 {
+  width: 20%;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>----clase predefinite-----<<<<<<<<<<<<<<<<<<<<<<<<*/
+.big {
+  line-height: 3;
+}
+
+.big_font {
+  font-size: 20px;
+}
+
+.big_table {
+  line-height: 3;
+}
+
+.align_right {
+  padding-top: 50px;
+  padding-right: 50px;
+  text-align: right;
+}
+.align_left {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>----first row----<<<<<<<<<<<<<<<<<<<<<<<<*/
+.black {
+  font-family: 'Work Sans:700', sans-serif;
+  background-color: black;
+  width: 50px;
+  height:50px;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+}
+
+.col-50 p:first-child {
+      font-family: 'Work Sans:700', sans-serif;
+      font-size: 15px;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>----third row (table)----<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+thead {
+  color: #4B4B4B;
+  font-size: 15px;
+  font-family: 'Work Sans:700', sans-serif;
+  line-height: 3;
+}
+
+tbody {
+  color: #4A4949;
+  line-height: 3;
+}
+                tr td:first-child {
+                  padding-right: 54px;
+                  text-align: left;
+                }
+
+                tr td:nth-child(2) {
+                  padding-right: 24px;
+                  text-align: left;
+                }
+
+                tr td:nth-child(3) {
+                  padding-left: 10px;
+                  padding-right: 10px;
+                  text-align:center;;
+                }
+
+                tr td:nth-child(4) {
+                  padding-left: 10px;
+                  padding-right: 10px;
+                  text-align:center;;
+                }
+                tr td:last-child {
+                  padding-left: 50px;
+                  text-align: right;
+                }
+
+                tbody tr:last-child {
+                  height: 20px;
+
+                }
+                tbody tr:last-child td:last-child {
+                    border-bottom: 1px solid;
+                }
+
+
+tfoot {
+    font-family: 'Work Sans:700', sans-serif;
+
+}
+
+                tfoot tr:first-child{
+                    height: 20px;
+                }
+                tfoot tr:nth-child(2) {
+                    line-height: 2;
+
+                }
+
+                tfoot tr:nth-child(2) td:last-child {
+                    font-family: 'Work Sans:400', sans-serif;
+                    color: #BFBFBF;
+                }
+                tfoot tr:last-child {
+                      line-height: 4;
+                }
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>----last row----<<<<<<<<<<<<<<<<<<<<<<<<*/
+.last_div {
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  line-height: 3;
+}
+
+                .last_div p:first-child{
+                color: #4B4B4B;
+                font-family: 'Work Sans:700', sans-serif;
+                }
+
+                .last_div p:nth-child(3) {
+                  line-height: 1;
+                  padding-bottom: 30px;
+                }
+
+                .last_div p:last-child {
+                  border-top: 1px solid #ABABAB;
+                  line-height: 4;
+                }

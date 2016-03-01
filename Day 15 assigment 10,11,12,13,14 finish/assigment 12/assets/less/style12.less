@@ -1,0 +1,249 @@
+//out: ../css/style12.css
+@import "variable.less";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+
+	vertical-align: baseline;
+
+	border: 0;
+
+	font: inherit;
+	font-size: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section
+{
+	display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+.cf:before,
+.cf:after,
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+}
+
+.cf:after,
+.row:after {
+  clear: both;
+}
+::-webkit-input-placeholder { color:#A1A1A1; font-size: 11px;}
+::-moz-placeholder { color:#A1A1A1; }
+::-ms-input-placeholder { color:#A1A1A1; }
+input { color:#A1A1A1; }
+
+
+html,
+body {
+	width: 100%;
+  height: 100%;
+  margin: 0;
+	font-size: @font-size;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>---------clase predefinite----------<<<<<<<<<<<<<<<<<<<<<<<*/
+.row {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+  top: 50%;
+  min-height: 679px;
+  transform: translate(0,-50%);
+  position: relative;
+}
+
+
+[class^="col-"],
+[class*=" col-"] {
+  float: left;
+}
+
+.col-8 {
+  width: 8%;
+}
+
+.col-10 {
+  width: 10%;
+}
+
+.col-20 {
+  width: 20%;
+}
+
+.col-25 {
+  width: 25%;
+}
+
+.col-30 {
+  width: 30%;
+}
+
+.col-33 {
+  width: 33.3333%;
+}
+
+.col-46 {
+  width: 46%;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.col-66 {
+  width: 66.6666%;
+}
+
+.col-70 {
+  width: 70%;
+}
+
+.col-75 {
+  width: 75%;
+}
+.col-100 {
+  width: 100%;
+}
+
+.vertical {
+  position: relative;
+  display: table;
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+.letter {
+  letter-spacing: 0.2em;
+}
+
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+
+.header {
+  height: auto;
+  width: 100%;
+  max-width: 1920px;
+}
+
+.container {
+  max-width: 800px;
+  height:auto;
+  padding: 0px 60px;
+  background-color: @background-color-container;
+
+}
+
+body {
+  font-family:@allfont-family;
+  color:@allfontcolor;
+  background-color: @body-background-color;
+}
+
+.adjust-col {
+    height: 679px;
+    width: 420px;
+    background-color: @background-color-container;
+    border-left: 2px solid #00001B;
+    border-top: 2px  solid #101E3F;
+    border-bottom: 2px solid #101E3F;
+    border-right: 2px solid #242C46;
+    padding: 35px;
+
+
+    .header {
+    border-bottom: 1px solid #32384C;
+    padding: 20px 0;
+
+      .left-span {
+        color: #6D6B5C;
+        float: left;
+        padding-left: 20px;
+      }
+      .right-span {
+        color: #B5B7C3;
+        float: right;
+        padding-right: 20px;
+      }
+      a {
+        color: @hfontcolor;
+        float: right;
+        padding-left: 20px;
+      }
+      }
+
+    .main {
+      padding-bottom: 20px;
+      hr {
+        border-top: 1px solid #9F9FA0;
+        margin: 0;
+      }
+      p {
+        padding: 10px 15px;
+        span {
+          color: #9F9FA0;
+          font-size: 15px;
+        }
+      }
+    }
+
+    .footer {
+      padding: 15px 0px;
+      border-top: 1px solid #32384C;
+      a {
+        color: @hfontcolor;
+        padding: 0 22px;
+      }
+    }
+}
+
+.position-bottom {
+  position: absolute;
+  bottom: 35px;
+}
+
+.padding-right {
+  padding-left: 50px;
+  padding-right: 15px;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+
+    }
+}
